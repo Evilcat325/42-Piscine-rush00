@@ -6,11 +6,12 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/22 19:32:48 by seli              #+#    #+#             */
-/*   Updated: 2018/09/22 19:59:49 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/22 20:00:55 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void    ft_putchar(char c);
+void    rush_with_custum_char(int width, int height, char output[6]);
 
 void    rush(int width, int height)
 {
