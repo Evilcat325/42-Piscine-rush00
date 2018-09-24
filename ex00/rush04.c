@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush00.c                                           :+:      :+:    :+:   */
+/*   rush04.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/22 19:32:48 by seli              #+#    #+#             */
-/*   Updated: 2018/09/23 22:01:00 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/23 22:04:54 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ void	rush(int width, int height)
 {
 	char output[7];
 
-	output[0] = 'o';
-	output[1] = 'o';
-	output[2] = 'o';
-	output[3] = 'o';
-	output[4] = '-';
-	output[5] = '|';
+	output[0] = 'A';
+	output[1] = 'C';
+	output[2] = 'C';
+	output[3] = 'A';
+	output[4] = 'B';
+	output[5] = 'B';
 	rush_with_custum_char(width, height, output);
 }
 
@@ -40,7 +40,7 @@ void	rush_with_custum_char(int width, int height, char output[7])
 		while (++w < width)
 		{
 			c = char_to_print(w, h, width, height);
-			if (c < 0)
+			if (0 <= c && c <=5)
 				ft_putchar(' ');
 			else
 				ft_putchar(output[c]);
