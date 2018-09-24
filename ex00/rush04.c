@@ -6,7 +6,7 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/22 19:32:48 by seli              #+#    #+#             */
-/*   Updated: 2018/09/23 22:04:54 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/23 22:59:20 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	rush_with_custum_char(int width, int height, char output[7])
 		while (++w < width)
 		{
 			c = char_to_print(w, h, width, height);
-			if (0 <= c && c <=5)
+			if (c < 0)
 				ft_putchar(' ');
 			else
 				ft_putchar(output[c]);
